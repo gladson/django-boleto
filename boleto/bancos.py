@@ -1,6 +1,6 @@
 # -*- coding: utf-8
 from datetime import date
-from djboleto.boleto import util
+from boleto import util
 from django.conf import settings
 
 class Boleto(object):

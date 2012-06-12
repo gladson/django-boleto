@@ -2,10 +2,10 @@
 from datetime import date, timedelta
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
-from djboleto.boleto import bancos
-from djboleto.boleto.util import gerar_codigo_barras
+from boleto import bancos
+from boleto.util import gerar_codigo_barras
 from io import StringIO
-from djboleto.boleto.bancos import BoletoBancoDoBrasil, BoletoBancoReal,\
+from boleto.bancos import BoletoBancoDoBrasil, BoletoBancoReal,\
             BoletoBradesco, BoletoCaixaEconomica, BoletoCaixaEconomicaSIGCB
 
 def boleto_bb(request):           
